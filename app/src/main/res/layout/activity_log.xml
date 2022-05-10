@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient"
+        tools:context=".LogActivity">
+
+    <ImageView
+            android:id="@+id/loginLogo"
+            android:layout_width="148dp"
+            android:layout_height="140dp" app:srcCompat="@drawable/login"
+            app:layout_constraintHorizontal_bias="0.5"
+            app:layout_constraintVertical_bias="0.2"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+    <TextView
+            android:id="@+id/tvRating"
+            android:text="@string/loginForm"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.4"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            android:textColor="#FFFDFD" android:textSize="34sp" android:fontFamily="@font/montserrat_alternates"
+    />
+    <TextView
+            android:id="@+id/tvSubtitle"
+            android:text="@string/data"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvRating"
+            android:textColor="#FFFDFD" android:textSize="14sp" android:fontFamily="@font/montserrat_alternates"
+    />
+    <EditText
+            android:id="@+id/username"
+            android:layout_width="220dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPersonName"
+            android:hint="Ingrese su usuario"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/tvSubtitle"
+            android:drawableLeft="@android:drawable/ic_menu_view"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_alternates" android:textSize="16sp"/>
+    <EditText
+            android:id="@+id/password"
+            android:layout_width="240dp"
+            android:layout_height="wrap_content"
+            android:inputType="textPassword"
+            android:drawableLeft="@android:drawable/ic_lock_idle_lock"
+            android:hint="Ingrese su contraseña"
+            android:singleLine="true"
+            app:layout_constraintVertical_bias="0.05"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/username"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_alternates" android:textSize="16sp"/>
+    <Button
+            android:id="@+id/btnLogin"
+            android:text="@string/login"
+            android:layout_width="120dp"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.1"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/password"
+            android:backgroundTint="#233977" android:textColor="#FFFFFF"
+            android:textAlignment="center"
+            android:fontFamily="@font/montserrat_alternates"/>
+    <TextView
+            android:id="@+id/tvRegister"
+            android:text="@string/register"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintVertical_bias="0.02"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/btnLogin"
+            android:textColor="#B6B5B5" android:textSize="14sp" android:fontFamily="@font/montserrat_alternates"
+    />
+
+</android.support.constraint.ConstraintLayout>

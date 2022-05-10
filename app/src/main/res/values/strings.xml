@@ -1,0 +1,14 @@
+<resources>
+    <string name="app_name">Lab2-Layouts</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="loginForm">Sistema de Peliculas</string>
+    <string name="username">Ingrese su nombre de usuario</string>
+    <string name="password">Ingrese su contraseña</string>
+    <string name="login">Inicio</string>
+    <string name="back">Volver</string>
+    <string name="data">Ingrese sus datos</string>
+    <string name="register">Registre sus datos</string>
+    <string name="menu">Catálogo</string>
+    <string name="rating">Rating</string>
+</resources>
